@@ -1099,7 +1099,6 @@ Domain.KickText.TextColor3 = Color3.fromRGB(255, 255, 255)
 Domain.KickText.TextScaled = true
 Domain.KickText.TextSize = 14.000
 Domain.KickText.TextWrapped = true
-
 Domain.UICorner_19.CornerRadius = UDim.new(0, 10)
 Domain.UICorner_19.Parent = Domain.Kick
 
@@ -4755,10 +4754,10 @@ function Teleport(Player)
 	end
 end
 
-	function Kick(Player)
+	function Kick()
 		if game.Players:FindFirstChild(Player.Name) then
 			local LocalPlayer = game.Players.LocalPlayer
-			if tools() then
+			if tools(1) then
 			Notify("Attempting to Kick "..Player.Name,"GothamSemibold",Color3.fromRGB(0, 85, 127))
 				if Player ~= nil then
 
